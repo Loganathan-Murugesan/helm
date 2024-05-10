@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-flask-app
+  labels:
+    app: my-flask-app
+spec:
+  replicas: 2  # Number of pods to run
+  selector:
+    matchLabels:
+      app: my-flask-app
+  template:
+    metadata:
+      labels:
+        app: my-flask-app
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+      - name: my-flask-app
+        image: "{{ .Values.image.image }}:{{ .Values.image.tag }}" # Replace with your image name
+        # Port where your Flask app listens (usually 5000)
+        # Specify any environment variables needed by your app (optional)
+        ports:
+        - containerPort: {{ .Values.service.targetport }}
