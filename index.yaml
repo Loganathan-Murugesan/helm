@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  test-flask-app:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2024-05-10T07:58:53.855660442Z"
+    description: A simple Flask application
+    digest: c6dbfc9a1f64e9f2962779cefe611802a75cca09c90cf0fa6c6891fdf0e316ed
+    maintainers:
+    - email: loganathan.m@hpe.com
+      name: Loganathan Murugesan
+    name: test-flask-app
+    urls:
+    - https://github.com/Loganathan-Murugesan/helm/releases/download/test-flask-app-0.1.1/test-flask-app-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-05-10T07:58:53.855666063Z"
