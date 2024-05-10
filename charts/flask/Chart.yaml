@@ -1,10 +1,10 @@
 # Replace with your application name
 apiVersion: v2
 name: test-flask-app
-appVersion: 0.1.1
+appVersion: 0.1.2
 
 # Replace with a version (e.g., 1.0.0)
-version: 0.1.1
+version: 0.1.2
 
 # Replace with a description of your application
 description: A simple Flask application
